@@ -4,6 +4,38 @@
    JavaScript - Our Little Fairytale
 ======================================== */
 
+/* ========================================
+   SUPABASE - LOVEE CONNECTION
+======================================== */
+
+const LOVEE_URL = "https://aqjtxnvixhqtyagknqnq.supabase.co";
+
+const LOVEE_PUBLIC_KEY = "sb_publishable_x9xLHghaDNtnniRO9x8flA_cDI5hEWW";
+
+const lovee = window.supabase.createClient(
+    LOVEE_URL,
+    LOVEE_PUBLIC_KEY
+);
+
+// Make Supabase available to the rest of the website.
+window.lovee = lovee;
+
+// Check the connection.
+async function testLoveeConnection() {
+    try {
+        const { error } = await lovee.auth.getSession();
+
+        if (error) throw error;
+
+        console.log("♡ Lovee connected successfully ♡");
+
+    } catch (error) {
+        console.error("Lovee connection error:", error.message);
+    }
+}
+
+testLoveeConnection();
+
 
 /* ========================================
    1. CONFIGURATION
