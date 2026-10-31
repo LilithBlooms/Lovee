@@ -1,303 +1,1040 @@
 
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d9c8ff">
 
-    <meta name="theme-color" content="#fce4ec">
+    <title>William & Isabella ♡ Our Little Universe</title>
 
-    <meta name="description" content="William & Isabella — Two hearts, one beautiful story.">
+    <meta name="description" content="Our little universe, a magical place for William and Isabella.">
 
-    <title>William & Isabella | Our Little World</title>
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Magical Background -->
-    <div class="fairytale-background">
-        <div class="fireflies"></div>
-        <div class="floating-hearts"></div>
-    </div>
+    <!-- BACKGROUND MAGIC -->
+    <div class="star-background" id="starBackground"></div>
+    <div class="fireflies" id="fireflies"></div>
 
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar">
+    <!-- MOBILE MENU BUTTON -->
+    <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu">
+        ☰
+    </button>
 
-            <a href="#home" class="logo">
-                W <span>&</span> I
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <span class="logo-moon">☾</span>
+            <h2>W & I</h2>
+            <p>Our Little Universe</p>
+        </div>
+
+        <nav class="main-navigation">
+
+            <a href="#home" class="nav-link active">
+                <span>⌂</span> Home
             </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#distance">Our Distance</a></li>
-                <li><a href="#countdown">Next Meeting</a></li>
-            </ul>
+            <a href="#daily-sky" class="nav-link">
+                <span>✦</span> Our Daily Sky
+            </a>
 
-            <button id="theme-toggle" class="theme-toggle">
-                ✧ Change Theme
-            </button>
+            <a href="#constellation" class="nav-link">
+                <span>✧</span> Constellation
+            </a>
+
+            <a href="#little-baby" class="nav-link">
+                <span>🐾</span> Our Little Baby
+            </a>
+
+            <a href="#love-letters" class="nav-link">
+                <span>✉</span> Love Letters
+            </a>
+
+            <a href="#garden" class="nav-link">
+                <span>❀</span> Our Garden
+            </a>
+
+            <a href="#games" class="nav-link">
+                <span>♧</span> Games & Questions
+            </a>
+
+            <a href="#map" class="nav-link">
+                <span>♡</span> Map of Us
+            </a>
+
+            <a href="#music" class="nav-link">
+                <span>♫</span> Our Music
+            </a>
+
+            <a href="#calendar" class="nav-link">
+                <span>▦</span> Calendar
+            </a>
+
+            <a href="#dreams" class="nav-link">
+                <span>☆</span> Our Dreams
+            </a>
+
+            <a href="#diary" class="nav-link">
+                <span>✎</span> Our Diary
+            </a>
+
+            <a href="#memories" class="nav-link">
+                <span>▧</span> Memories
+            </a>
+
+            <a href="#settings" class="nav-link">
+                <span>⚙</span> Settings
+            </a>
 
         </nav>
-    </header>
+
+        <div class="sidebar-footer">
+            <span>Made of stars</span>
+            <p>William & Isabella ♡</p>
+        </div>
+
+    </aside>
 
 
-    <main>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
 
-        <!-- HERO SECTION -->
-        <section id="home" class="hero">
+        <!-- HEADER -->
+        <header class="top-header">
 
-            <div class="hero-content">
+            <div class="welcome-message">
+                <span class="small-star">✧</span>
+                <p>A little universe made for two</p>
+            </div>
 
-                <p class="welcome-text">
-                    Welcome to our little universe
-                </p>
+            <div class="header-actions">
 
-                <h1>
-                    William <span>&</span> Isabella
-                </h1>
+                <button class="icon-button" id="themeButton" title="Change theme">
+                    ☾
+                </button>
 
-                <p class="hero-subtitle">
-                    Two hearts, two places, one beautiful story.
-                </p>
-
-                <div class="hero-decoration">
-                    ✧ ♡ ✧
-                </div>
-
-                <a href="#story" class="discover-button">
-                    Discover Our Story
-                </a>
+                <button class="icon-button" id="notificationButton" title="Notifications">
+                    ♡
+                </button>
 
             </div>
 
-        </section>
+        </header>
 
 
-        <!-- OUR STORY -->
-        <section id="story" class="story section">
+        <!-- HOME -->
+        <section id="home" class="section home-section">
 
-            <div class="section-heading">
+            <div class="main-title">
+                <span class="title-decoration">✧</span>
 
-                <span class="small-title">A little piece of forever</span>
+                <h1>William & Isabella</h1>
 
-                <h2>Our Story</h2>
+                <p>Our Little Universe ♡</p>
 
-                <p>
-                    Every love story is beautiful,
-                    but ours is my favorite.
-                </p>
-
-            </div>
-
-            <div class="story-card">
-
-                <div class="story-icon">♡</div>
-
-                <h3>William & Isabella</h3>
-
-                <p id="love-story">
-                    Two different worlds brought together
-                    by something truly special.
-                    This is our little universe,
-                    filled with memories, dreams and love.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- DISTANCE SECTION -->
-        <section id="distance" class="distance section">
-
-            <div class="section-heading">
-
-                <span class="small-title">No distance can change this</span>
-
-                <h2>Our Little World</h2>
-
-                <p>Different places, but always connected.</p>
-
-            </div>
-
-            <div class="distance-container">
-
-                <div class="person-card isabella-card">
-
-                    <div class="person-decoration">✿</div>
-
-                    <h3>Isabella</h3>
-
-                    <p class="person-city" id="isabella-city">
-                        Her City
-                    </p>
-
-                    <div class="clock" id="isabella-clock">
-                        --:--:--
-                    </div>
-
-                    <span>Her local time</span>
-
-                </div>
-
-
-                <div class="distance-middle">
-
-                    <div class="distance-heart">♡</div>
-
-                    <h3 id="distance-counter">
-                        Calculating...
-                    </h3>
-
-                    <p>kilometers between us</p>
-
-                    <div class="distance-line"></div>
-
-                </div>
-
-
-                <div class="person-card william-card">
-
-                    <div class="person-decoration">✧</div>
-
-                    <h3>William</h3>
-
-                    <p class="person-city" id="william-city">
-                        His City
-                    </p>
-
-                    <div class="clock" id="william-clock">
-                        --:--:--
-                    </div>
-
-                    <span>His local time</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="map-container">
-
-                <h3>Our Two Places</h3>
-
-                <div id="distance-map">
-                    <!-- Map will be added with JavaScript -->
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- COUNTDOWN SECTION -->
-        <section id="countdown" class="countdown section">
-
-            <div class="section-heading">
-
-                <span class="small-title">Until we meet again</span>
-
-                <h2>Our Next Meeting</h2>
-
-                <p>
-                    Every second brings us closer.
-                </p>
-
-            </div>
-
-
-            <div class="countdown-container">
-
-                <div class="countdown-box">
-                    <span id="days">00</span>
-                    <p>Days</p>
-                </div>
-
-                <div class="countdown-box">
-                    <span id="hours">00</span>
-                    <p>Hours</p>
-                </div>
-
-                <div class="countdown-box">
-                    <span id="minutes">00</span>
-                    <p>Minutes</p>
-                </div>
-
-                <div class="countdown-box">
-                    <span id="seconds">00</span>
-                    <p>Seconds</p>
-                </div>
-
-            </div>
-
-            <p class="countdown-message">
-                One day, there will be no more goodbyes. ♡
-            </p>
-
-        </section>
-
-
-        <!-- FINAL MESSAGE -->
-        <section class="final-message section">
-
-            <div class="final-content">
-
-                <span class="final-heart">♡</span>
-
-                <h2>To My Favorite Person</h2>
-
-                <p>
-                    No matter how far apart we are,
-                    you will always have a special place
-                    in my little world.
-                </p>
-
-                <span class="signature">
-                    Forever & Always
+                <span class="title-subtitle">
+                    Even across the stars, we find each other.
                 </span>
+            </div>
+
+
+            <!-- COUPLE PROFILES -->
+            <div class="couple-container">
+
+                <article class="profile-card william-card">
+
+                    <div class="profile-picture">
+                        <img
+                            id="williamPhoto"
+                            src="https://placehold.co/300x300/9fc8ff/ffffff?text=William"
+                            alt="William's profile picture"
+                        >
+                    </div>
+
+                    <h2>William <span>💙</span></h2>
+
+                    <p class="profile-location" id="williamCity">
+                        William's city
+                    </p>
+
+                    <p class="profile-time" id="williamTime">
+                        --:--:--
+                    </p>
+
+                    <span class="profile-label">My favorite boy</span>
+
+                </article>
+
+
+                <div class="together-card">
+
+                    <span class="heart-decoration">♡</span>
+
+                    <p>Time Together</p>
+
+                    <h2 id="daysTogether">0 days</h2>
+
+                    <span>And counting...</span>
+
+                </div>
+
+
+                <article class="profile-card isabella-card">
+
+                    <div class="profile-picture">
+                        <img
+                            id="isabellaPhoto"
+                            src="https://placehold.co/300x300/f6c4e2/ffffff?text=Isabella"
+                            alt="Isabella's profile picture"
+                        >
+                    </div>
+
+                    <h2>Isabella <span>🩷</span></h2>
+
+                    <p class="profile-location" id="isabellaCity">
+                        Isabella's city
+                    </p>
+
+                    <p class="profile-time" id="isabellaTime">
+                        --:--:--
+                    </p>
+
+                    <span class="profile-label">My favorite girl</span>
+
+                </article>
+
+            </div>
+
+
+            <!-- DAILY DASHBOARD -->
+            <div class="dashboard-grid">
+
+                <!-- DAILY SKY -->
+                <article class="glass-card daily-sky-card" id="daily-sky">
+
+                    <div class="card-heading">
+                        <span class="card-icon">☁</span>
+                        <h2>Our Daily Sky</h2>
+                    </div>
+
+                    <p class="card-date" id="skyDate">
+                        A little piece of our day
+                    </p>
+
+                    <div class="sky-image-container">
+
+                        <img
+                            id="dailySkyPreview"
+                            src="https://placehold.co/700x450/9b91c8/ffffff?text=Our+Daily+Sky"
+                            alt="Our shared sky"
+                        >
+
+                    </div>
+
+                    <p class="romantic-caption">
+                        The same sky, even when we're apart. ♡
+                    </p>
+
+                    <label for="dailySkyUpload" class="upload-button">
+                        + Add today's sky
+                    </label>
+
+                    <input
+                        type="file"
+                        id="dailySkyUpload"
+                        accept="image/*"
+                        hidden
+                    >
+
+                    <textarea
+                        id="dailySkyMessage"
+                        placeholder="Write something about today's sky..."
+                        rows="2"
+                    ></textarea>
+
+                    <button id="saveSkyButton" class="primary-button">
+                        Save our sky ♡
+                    </button>
+
+                </article>
+
+
+                <!-- OUR LITTLE BABY -->
+                <article class="glass-card pet-card" id="little-baby">
+
+                    <div class="card-heading">
+                        <span class="card-icon">🐾</span>
+                        <h2>Our Little Baby</h2>
+                    </div>
+
+                    <div class="pet-content">
+
+                        <div class="pet-visual">
+
+                            <div class="pet-sparkles">✧ ♡ ✧</div>
+
+                            <img
+                                id="petImage"
+                                src="https://placehold.co/500x400/f8d9eb/ffffff?text=Our+Little+Kitten"
+                                alt="Our virtual kitten"
+                            >
+
+                            <span class="pet-sleep-symbol" id="petSleepSymbol">
+                                Zzz...
+                            </span>
+
+                        </div>
+
+
+                        <div class="pet-information">
+
+                            <h3 id="petName">Mochi ♡</h3>
+
+                            <p id="petMood">Happy little kitten</p>
+
+                            <div class="pet-stat">
+
+                                <div class="stat-heading">
+                                    <span>♡ Happiness</span>
+                                    <span id="happinessValue">100%</span>
+                                </div>
+
+                                <div class="stat-bar">
+                                    <div id="happinessBar" class="stat-fill happiness-fill"></div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="pet-stat">
+
+                                <div class="stat-heading">
+                                    <span>☁ Energy</span>
+                                    <span id="energyValue">100%</span>
+                                </div>
+
+                                <div class="stat-bar">
+                                    <div id="energyBar" class="stat-fill energy-fill"></div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="pet-stat">
+
+                                <div class="stat-heading">
+                                    <span>♡ Hunger</span>
+                                    <span id="hungerValue">0%</span>
+                                </div>
+
+                                <div class="stat-bar">
+                                    <div id="hungerBar" class="stat-fill hunger-fill"></div>
+                                </div>
+
+                            </div>
+
+                            <p class="pet-streak">
+                                ✨ Care streak: <strong id="petStreak">0 days</strong>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pet-actions">
+
+                        <button id="feedPetButton" class="pet-action-button">
+                            🥣 Feed
+                        </button>
+
+                        <button id="playPetButton" class="pet-action-button">
+                            🧶 Play
+                        </button>
+
+                        <button id="cuddlePetButton" class="pet-action-button">
+                            💗 Cuddle
+                        </button>
+
+                        <button id="restPetButton" class="pet-action-button">
+                            ☾ Rest
+                        </button>
+
+                    </div>
+
+                    <p class="pet-message" id="petMessage">
+                        Your little kitten is waiting for you both!
+                    </p>
+
+                </article>
+
+
+                <!-- NEXT MEETING -->
+                <article class="glass-card countdown-card">
+
+                    <div class="card-heading">
+                        <span class="card-icon">☾</span>
+                        <h2>Our Next Meeting</h2>
+                    </div>
+
+                    <div class="countdown-illustration">
+                        <span>☾</span>
+                        <span>✦</span>
+                        <span>♡</span>
+                    </div>
+
+                    <p id="meetingMessage">
+                        Our date hasn't been chosen yet.
+                    </p>
+
+                    <label for="meetingDate" class="date-label">
+                        Choose our special date
+                    </label>
+
+                    <input
+                        type="datetime-local"
+                        id="meetingDate"
+                    >
+
+                    <button id="saveMeetingButton" class="primary-button">
+                        Save our date ♡
+                    </button>
+
+                    <div class="countdown-timer">
+
+                        <div class="countdown-unit">
+                            <strong id="countdownDays">--</strong>
+                            <span>Days</span>
+                        </div>
+
+                        <div class="countdown-unit">
+                            <strong id="countdownHours">--</strong>
+                            <span>Hours</span>
+                        </div>
+
+                        <div class="countdown-unit">
+                            <strong id="countdownMinutes">--</strong>
+                            <span>Minutes</span>
+                        </div>
+
+                        <div class="countdown-unit">
+                            <strong id="countdownSeconds">--</strong>
+                            <span>Seconds</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MAP -->
+                <article class="glass-card distance-card" id="map">
+
+                    <div class="card-heading">
+                        <span class="card-icon">♡</span>
+                        <h2>Our Distance</h2>
+                    </div>
+
+                    <div id="mapContainer" class="map-container">
+
+                        <div class="map-placeholder">
+                            <span>🌎</span>
+                            <p>Two places, one little universe.</p>
+                        </div>
+
+                    </div>
+
+                    <h3 id="distanceValue">Distance not configured</h3>
+
+                    <div class="distance-locations">
+
+                        <span id="williamMapLocation">
+                            💙 William's location
+                        </span>
+
+                        <span id="isabellaMapLocation">
+                            🩷 Isabella's location
+                        </span>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
+
+
+        <!-- CONSTELLATION -->
+        <section id="constellation" class="section">
+
+            <div class="section-heading">
+                <span>✧</span>
+                <h2>Our Constellation</h2>
+                <p>Every memory becomes another star in our universe.</p>
+            </div>
+
+            <div class="glass-card constellation-card">
+
+                <div class="constellation-visual" id="constellationVisual">
+                    <span class="constellation-star">✦</span>
+                    <span class="constellation-star">✧</span>
+                    <span class="constellation-star">✦</span>
+                    <span class="constellation-star">♡</span>
+                    <p>Our story is written in the stars.</p>
+                </div>
+
+                <button id="addStarButton" class="primary-button">
+                    Add a new memory ✧
+                </button>
+
+                <div id="constellationMemories" class="memory-list"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOVE LETTERS -->
+        <section id="love-letters" class="section">
+
+            <div class="section-heading">
+                <span>✉</span>
+                <h2>Love Letters</h2>
+                <p>Little words for the days when we need each other.</p>
+            </div>
+
+            <div class="glass-card letters-card">
+
+                <div class="letter-categories">
+
+                    <button class="letter-category" data-letter="miss">
+                        Open when you miss me
+                    </button>
+
+                    <button class="letter-category" data-letter="sad">
+                        Open when you're sad
+                    </button>
+
+                    <button class="letter-category" data-letter="happy">
+                        Open when you're happy
+                    </button>
+
+                    <button class="letter-category" data-letter="love">
+                        Open when you need love
+                    </button>
+
+                    <button class="letter-category" data-letter="special">
+                        Open on a special day
+                    </button>
+
+                </div>
+
+                <div class="letter-paper">
+
+                    <span>♡</span>
+
+                    <h3>A little letter for you</h3>
+
+                    <p id="letterDisplay">
+                        Some words are waiting to be opened.
+                    </p>
+
+                </div>
+
+                <button id="writeLetterButton" class="primary-button">
+                    Write a new letter ♡
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GARDEN -->
+        <section id="garden" class="section">
+
+            <div class="section-heading">
+                <span>🌷</span>
+                <h2>Our Little Garden</h2>
+                <p>Let's grow something beautiful together.</p>
+            </div>
+
+            <div class="glass-card garden-card">
+
+                <div class="garden-visual" id="gardenVisual">
+                    <div class="garden-sky">☁️　 ✦　 ☁️</div>
+                    <div class="garden-ground">
+                        <span>🌱</span>
+                        <span>🌷</span>
+                        <span>🌸</span>
+                        <span>🌼</span>
+                        <span>🌱</span>
+                    </div>
+                </div>
+
+                <div class="garden-actions">
+
+                    <button id="waterGardenButton" class="primary-button">
+                        💧 Water our plants
+                    </button>
+
+                    <button id="plantFlowerButton" class="secondary-button">
+                        🌷 Plant a flower
+                    </button>
+
+                </div>
+
+                <p id="gardenMessage">
+                    Every little act of love helps our garden grow.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GAMES -->
+        <section id="games" class="section">
+
+            <div class="section-heading">
+                <span>🎮</span>
+                <h2>Games & Questions</h2>
+                <p>Let's make long-distance days more fun.</p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="glass-card game-card">
+
+                    <h3>♡ Daily Question</h3>
+
+                    <p id="dailyQuestion">
+                        What's your favorite memory of us?
+                    </p>
+
+                    <textarea
+                        id="dailyAnswer"
+                        placeholder="Write your answer..."
+                    ></textarea>
+
+                    <button id="saveAnswerButton" class="primary-button">
+                        Save answer
+                    </button>
+
+                </article>
+
+
+                <article class="glass-card game-card">
+
+                    <h3>✧ Tic-Tac-Toe</h3>
+
+                    <p>A little game for two.</p>
+
+                    <div id="ticTacToeBoard" class="tic-tac-toe-board">
+
+                        <button class="tic-cell" data-cell="0"></button>
+                        <button class="tic-cell" data-cell="1"></button>
+                        <button class="tic-cell" data-cell="2"></button>
+                        <button class="tic-cell" data-cell="3"></button>
+                        <button class="tic-cell" data-cell="4"></button>
+                        <button class="tic-cell" data-cell="5"></button>
+                        <button class="tic-cell" data-cell="6"></button>
+                        <button class="tic-cell" data-cell="7"></button>
+                        <button class="tic-cell" data-cell="8"></button>
+
+                    </div>
+
+                    <p id="ticTacToeStatus">William: X | Isabella: O</p>
+
+                    <button id="resetGameButton" class="secondary-button">
+                        Play again
+                    </button>
+
+                </article>
+
+
+                <article class="glass-card game-card">
+
+                    <h3>♡ Couple Quiz</h3>
+
+                    <p>How well do we know each other?</p>
+
+                    <button id="startQuizButton" class="primary-button">
+                        Start our quiz
+                    </button>
+
+                </article>
+
+
+                <article class="glass-card game-card">
+
+                    <h3>✦ Our Challenges</h3>
+
+                    <p id="challengeText">
+                        Send each other a little surprise today.
+                    </p>
+
+                    <button id="newChallengeButton" class="secondary-button">
+                        New challenge
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MUSIC -->
+        <section id="music" class="section">
+
+            <div class="section-heading">
+                <span>♫</span>
+                <h2>Our Music</h2>
+                <p>Every song reminds us of something.</p>
+            </div>
+
+            <div class="glass-card music-card">
+
+                <div class="music-disc">
+                    ♡
+                </div>
+
+                <div class="music-information">
+
+                    <h3>We Fell in Love in October</h3>
+
+                    <p>girl in red</p>
+
+                    <a
+                        href="https://open.spotify.com/search/We%20Fell%20in%20Love%20in%20October"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="primary-button"
+                    >
+                        Listen to our song ♡
+                    </a>
+
+                </div>
+
+                <p class="music-note">
+                    Our little soundtrack.
+                </p>
+
+            </div>
+
+            <div class="glass-card">
+
+                <h3>Our Shared Playlist</h3>
+
+                <p>Add songs that remind you of each other.</p>
+
+                <input
+                    type="text"
+                    id="songName"
+                    placeholder="Song name"
+                >
+
+                <input
+                    type="url"
+                    id="songLink"
+                    placeholder="Spotify or YouTube link"
+                >
+
+                <button id="addSongButton" class="primary-button">
+                    Add song ♫
+                </button>
+
+                <div id="playlistContainer"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALENDAR -->
+        <section id="calendar" class="section">
+
+            <div class="section-heading">
+                <span>▦</span>
+                <h2>Our Calendar</h2>
+                <p>Important little dates in our story.</p>
+            </div>
+
+            <div class="glass-card calendar-card">
+
+                <h3>Our Special Dates</h3>
+
+                <input
+                    type="text"
+                    id="eventName"
+                    placeholder="Event name"
+                >
+
+                <input
+                    type="date"
+                    id="eventDate"
+                >
+
+                <button id="addEventButton" class="primary-button">
+                    Add special date
+                </button>
+
+                <div id="eventsList"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DREAMS / BUCKET LIST -->
+        <section id="dreams" class="section">
+
+            <div class="section-heading">
+                <span>☆</span>
+                <h2>Our Dreams</h2>
+                <p>All the things we want to experience together.</p>
+            </div>
+
+            <div class="glass-card dreams-card">
+
+                <input
+                    type="text"
+                    id="dreamInput"
+                    placeholder="Something we want to do together..."
+                >
+
+                <button id="addDreamButton" class="primary-button">
+                    Add to our bucket list ♡
+                </button>
+
+                <div id="dreamsList"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIARY -->
+        <section id="diary" class="section">
+
+            <div class="section-heading">
+                <span>✎</span>
+                <h2>Our Diary</h2>
+                <p>A place for our thoughts, feelings and little stories.</p>
+            </div>
+
+            <div class="glass-card diary-card">
+
+                <input
+                    type="text"
+                    id="diaryTitle"
+                    placeholder="Give this entry a title..."
+                >
+
+                <textarea
+                    id="diaryContent"
+                    rows="6"
+                    placeholder="Dear diary..."
+                ></textarea>
+
+                <button id="saveDiaryButton" class="primary-button">
+                    Save diary entry
+                </button>
+
+                <div id="diaryEntries"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section id="memories" class="section">
+
+            <div class="section-heading">
+                <span>♡</span>
+                <h2>Our Memories</h2>
+                <p>Little moments that deserve to last forever.</p>
+            </div>
+
+            <div class="glass-card memories-card">
+
+                <div class="memory-upload-area">
+
+                    <label for="memoryUpload" class="upload-button">
+                        📷 Add our pictures
+                    </label>
+
+                    <input
+                        type="file"
+                        id="memoryUpload"
+                        accept="image/*"
+                        multiple
+                        hidden
+                    >
+
+                    <input
+                        type="text"
+                        id="memoryCaption"
+                        placeholder="Write a little caption..."
+                    >
+
+                    <button id="saveMemoryButton" class="primary-button">
+                        Save memory ♡
+                    </button>
+
+                </div>
+
+                <div id="memoriesGallery" class="memories-gallery">
+
+                    <p class="empty-message">
+                        Our favorite moments will live here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOOD CHECK-IN -->
+        <section id="mood" class="section">
+
+            <div class="section-heading">
+                <span>☁</span>
+                <h2>Mood Check-In</h2>
+                <p>Even from far away, we can be there for each other.</p>
+            </div>
+
+            <div class="glass-card mood-card">
+
+                <h3>How are you feeling today?</h3>
+
+                <div class="mood-options">
+
+                    <button class="mood-button" data-mood="Happy">
+                        😊
+                        <span>Happy</span>
+                    </button>
+
+                    <button class="mood-button" data-mood="Loved">
+                        🥰
+                        <span>Loved</span>
+                    </button>
+
+                    <button class="mood-button" data-mood="Okay">
+                        😌
+                        <span>Okay</span>
+                    </button>
+
+                    <button class="mood-button" data-mood="Sad">
+                        🥺
+                        <span>Sad</span>
+                    </button>
+
+                    <button class="mood-button" data-mood="Tired">
+                        😴
+                        <span>Tired</span>
+                    </button>
+
+                </div>
+
+                <p id="moodMessage">
+                    Your feelings matter here. ♡
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SETTINGS -->
+        <section id="settings" class="section">
+
+            <div class="section-heading">
+                <span>⚙</span>
+                <h2>Our Settings</h2>
+                <p>Make this little universe yours.</p>
+            </div>
+
+            <div class="glass-card settings-card">
+
+                <h3>Our Profiles</h3>
+
+                <label for="williamName">William's name</label>
+                <input type="text" id="williamName" value="William">
+
+                <label for="williamCityInput">William's city</label>
+                <input type="text" id="williamCityInput" placeholder="Enter city">
+
+                <label for="williamTimezone">William's time zone</label>
+                <input type="text" id="williamTimezone" placeholder="Example: America/Chicago">
+
+                <hr>
+
+                <label for="isabellaName">Isabella's name</label>
+                <input type="text" id="isabellaName" value="Isabella">
+
+                <label for="isabellaCityInput">Isabella's city</label>
+                <input type="text" id="isabellaCityInput" placeholder="Enter city">
+
+                <label for="isabellaTimezone">Isabella's time zone</label>
+                <input type="text" id="isabellaTimezone" placeholder="Example: America/Santo_Domingo">
+
+                <hr>
+
+                <h3>Our Relationship</h3>
+
+                <label for="relationshipStart">
+                    The day our story began
+                </label>
+
+                <input type="date" id="relationshipStart">
+
+                <button id="saveSettingsButton" class="primary-button">
+                    Save our settings ♡
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+
+            <div class="footer-stars">✧　♡　✧</div>
+
+            <h2>William & Isabella</h2>
+
+            <p>Two hearts, one little universe.</p>
+
+            <span>Made with love, across the stars ♡</span>
+
+        </footer>
 
     </main>
 
 
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <p>
-            Made with ♡ for William & Isabella
-        </p>
-
-        <span>Our little fairytale · Forever</span>
-
-    </footer>
+    <!-- NOTIFICATION AREA -->
+    <div id="notificationArea" class="notification-area"></div>
 
 
-    <!-- Background Music -->
-    <audio id="background-music" loop>
-        <source src="assets/music.mp3" type="audio/mpeg">
-    </audio>
-
-    <button id="music-toggle" class="music-toggle">
-        ♫ Play Music
-    </button>
-
-
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
